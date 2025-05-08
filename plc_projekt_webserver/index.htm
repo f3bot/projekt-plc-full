@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+      <meta charset="utf-8">
+      <title>My Title</title>
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_1.login' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_1.password' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_1.fuel_amount' -->
+	  <!-- AWP_In_Variable Name='"HMI".User_Struct_1.start_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_1.end_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_2.login' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_2.password' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_2.fuel_amount' -->
+	  	  <!-- AWP_In_Variable Name='"HMI".User_Struct_2.start_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_2.end_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_3.login' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_3.password' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_3.fuel_amount' -->
+	  	  <!-- AWP_In_Variable Name='"HMI".User_Struct_3.start_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_3.end_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_4.login' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_4.password' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_4.fuel_amount' -->
+	  	  <!-- AWP_In_Variable Name='"HMI".User_Struct_4.start_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_4.end_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_5.login' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_5.password' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_5.fuel_amount' -->
+	  <!-- AWP_In_Variable Name='"HMI".User_Struct_5.start_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_5.end_time' --> 
+	  <!-- AWP_In_Variable Name='"HMI".User_Struct_6.login' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_6.password' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_6.fuel_amount' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_6.start_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_6.end_time' -->
+	  <!-- AWP_In_Variable Name='"HMI".User_Struct_7.login' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_7.password' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_7.fuel_amount' -->
+	  <!-- AWP_In_Variable Name='"HMI".User_Struct_7.start_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_7.end_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_8.login' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_8.password' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_8.fuel_amount' -->
+	  <!-- AWP_In_Variable Name='"HMI".User_Struct_8.start_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_8.end_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_9.login' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_9.password' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_9.fuel_amount' -->
+	  <!-- AWP_In_Variable Name='"HMI".User_Struct_9.start_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_9.end_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_10.login' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_10.password' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_10.fuel_amount' -->
+	  <!-- AWP_In_Variable Name='"HMI".User_Struct_10.start_time' -->
+      <!-- AWP_In_Variable Name='"HMI".User_Struct_10.end_time' -->
+      <!-- AWP_In_Variable Name='"HMI".HMI_Emergency_Stop' -->
+
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div id = "main-right">
+        <div> 
+            <form action="" method="post" class="reset-emergency">
+                <input type="submit" value="Reset Emergency Stop" class="reset-emergency-input">
+                <input type="hidden" name='"HMI".HMI_Emergency_Stop' value="0">
+            </form>
+        </div>
+        <div id="nav-top">
+            <button class='today-btn'>Today</button>
+            <button class='yesterday-btn'>Yesterday</button>
+        </div>
+
+<div class="main-element">
+  <div class="parent-wrapper">
+    <div class='description-elements'>
+        <span>Login</span>
+        <span>Password</span>
+        <span>Fuel Amount</span>
+        <span>Fuel Start Time</span>
+        <span>Fuel End Time</span>
+        <span class="actions">Actions</span>
+    </div>
+  </div>
+    <div class='today-elements visible-m'>
+        <div class="today-element" data-value="1">
+            <span id="login-span">:="HMI".User_Struct_1.login:</span>
+            <span id="password-span">:="HMI".User_Struct_1.password:</span>
+            <span>:="HMI".User_Struct_1.fuel_amount:</span>
+            <span>:="HMI".User_Struct_1.start_time:</span>
+            <span>:="HMI".User_Struct_1.end_time:</span>
+            <div class="button-wrapper">
+                <button class="edit-btn" data-value="1">Edit</button>
+                <button class="clear-btn" data-value="1">Clear</button>
+            </div>
+        </div>
+        <div class="today-element" data-value="2">
+            <span id="login-span">:="HMI".User_Struct_2.login:</span>
+            <span id="password-span">:="HMI".User_Struct_2.password:</span>
+            <span>:="HMI".User_Struct_2.fuel_amount:</span>
+            <span>:="HMI".User_Struct_2.start_time:</span>
+            <span>:="HMI".User_Struct_2.end_time:</span>
+            <div class="button-wrapper">
+                <button class="edit-btn" data-value="2">Edit</button>
+                <button class="clear-btn" data-value="2">Clear</button>
+            </div>
+        </div>
+        <div class="today-element" data-value="3">
+            <span id="login-span">:="HMI".User_Struct_3.login:</span>
+            <span id="password-span">:="HMI".User_Struct_3.password:</span>
+            <span>:="HMI".User_Struct_3.fuel_amount:</span>
+            <span>:="HMI".User_Struct_3.start_time:</span>
+            <span>:="HMI".User_Struct_3.end_time:</span>
+            <div class="button-wrapper">
+                <button class="edit-btn" data-value="3">Edit</button>
+                <button class="clear-btn" data-value="3">Clear</button>
+            </div>
+        </div>
+        <div class="today-element" data-value="4">
+            <span id="login-span">:="HMI".User_Struct_4.login:</span>
+            <span id="password-span">:="HMI".User_Struct_4.password:</span>
+            <span>:="HMI".User_Struct_4.fuel_amount:</span>
+            <span>:="HMI".User_Struct_4.start_time:</span>
+            <span>:="HMI".User_Struct_4.end_time:</span>
+            <div class="button-wrapper">
+                <button class="edit-btn" data-value="4">Edit</button>
+                <button class="clear-btn" data-value="4">Clear</button>
+            </div>
+        </div>
+        <div class="today-element" data-value="5">
+            <span id="login-span">:="HMI".User_Struct_5.login:</span>
+            <span id="password-span">:="HMI".User_Struct_5.password:</span>
+            <span>:="HMI".User_Struct_5.fuel_amount:</span>
+            <span>:="HMI".User_Struct_5.start_time:</span>
+            <span>:="HMI".User_Struct_5.end_time:</span>
+            <div class="button-wrapper">
+                <button class="edit-btn" data-value="5">Edit</button>
+                <button class="clear-btn" data-value="5">Clear</button>
+            </div>
+        </div>
+        <div class="today-element" data-value="6">
+            <span id="login-span">:="HMI".User_Struct_6.login:</span>
+            <span id="password-span">:="HMI".User_Struct_6.password:</span>
+            <span>:="HMI".User_Struct_6.fuel_amount:</span>
+            <span>:="HMI".User_Struct_6.start_time:</span>
+            <span>:="HMI".User_Struct_6.end_time:</span>
+            <div class="button-wrapper">
+                <button class="edit-btn" data-value="6">Edit</button>
+                <button class="clear-btn" data-value="6">Clear</button>
+            </div>
+        </div>
+        <div class="today-element" data-value="7">
+            <span id="login-span">:="HMI".User_Struct_7.login:</span>
+            <span id="password-span">:="HMI".User_Struct_7.password:</span>
+            <span>:="HMI".User_Struct_7.fuel_amount:</span>
+            <span>:="HMI".User_Struct_7.start_time:</span>
+            <span>:="HMI".User_Struct_7.end_time:</span>
+            <div class="button-wrapper">
+                <button class="edit-btn" data-value="7">Edit</button>
+                <button class="clear-btn" data-value="7">Clear</button>
+            </div>
+        </div>
+        <div class="today-element" data-value="8">
+            <span id="login-span">:="HMI".User_Struct_8.login:</span>
+            <span id="password-span">:="HMI".User_Struct_8.password:</span>
+            <span>:="HMI".User_Struct_8.fuel_amount:</span>
+            <span>:="HMI".User_Struct_8.start_time:</span>
+            <span>:="HMI".User_Struct_8.end_time:</span>
+            <div class="button-wrapper">
+                <button class="edit-btn" data-value="8">Edit</button>
+                <button class="clear-btn" data-value="8">Clear</button>
+            </div>
+        </div>
+        <div class="today-element" data-value="9">
+            <span id="login-span">:="HMI".User_Struct_9.login:</span>
+            <span id="password-span">:="HMI".User_Struct_9.password:</span>
+            <span>:="HMI".User_Struct_9.fuel_amount:</span>
+            <span>:="HMI".User_Struct_9.start_time:</span>
+            <span>:="HMI".User_Struct_9.end_time:</span>
+            <div class="button-wrapper">
+                <button class="edit-btn" data-value="9">Edit</button>
+                <button class="clear-btn" data-value="9">Clear</button>
+            </div>
+        </div>
+        <div class="today-element" data-value="10">
+            <span id="login-span">:="HMI".User_Struct_10.login:</span>
+            <span id="password-span">:="HMI".User_Struct_10.password:</span>
+            <span>:="HMI".User_Struct_10.fuel_amount:</span>
+            <span>:="HMI".User_Struct_10.start_time:</span>
+            <span>:="HMI".User_Struct_10.end_time:</span>
+            <div class="button-wrapper">
+                <button class="edit-btn" data-value="10">Edit</button>
+                <button class="clear-btn" data-value="10">Clear</button>
+            </div>
+        </div>
+    </div>
+    <div class='yesterday-elements invisible-m'>
+        <div class="yesterday-element" data-value="1">
+            <span>:="HMI_Yesterday".User_Struct_1.login:</span>
+            <span>:="HMI_Yesterday".User_Struct_1.password:</span>
+            <span>:="HMI_Yesterday".User_Struct_1.fuel_amount:</span>
+            <span>:="HMI_Yesterday".User_Struct_1.start_time:</span>
+            <span>:="HMI_Yesterday".User_Struct_1.end_time:</span>
+        </div>
+        <div class="yesterday-element" data-value="2">
+            <span>:="HMI_Yesterday".User_Struct_2.login:</span>
+            <span>:="HMI_Yesterday".User_Struct_2.password:</span>
+            <span>:="HMI_Yesterday".User_Struct_2.fuel_amount:</span>
+            <span>:="HMI_Yesterday".User_Struct_2.start_time:</span>
+            <span>:="HMI_Yesterday".User_Struct_2.end_time:</span>
+        </div>
+        <div class="yesterday-element" data-value="3">
+            <span>:="HMI_Yesterday".User_Struct_3.login:</span>
+            <span>:="HMI_Yesterday".User_Struct_3.password:</span>
+            <span>:="HMI_Yesterday".User_Struct_3.fuel_amount:</span>
+            <span>:="HMI_Yesterday".User_Struct_3.start_time:</span>
+            <span>:="HMI_Yesterday".User_Struct_3.end_time:</span>
+        </div>
+        <div class="yesterday-element" data-value="4">
+            <span>:="HMI_Yesterday".User_Struct_4.login:</span>
+            <span>:="HMI_Yesterday".User_Struct_4.password:</span>
+            <span>:="HMI_Yesterday".User_Struct_4.fuel_amount:</span>
+            <span>:="HMI_Yesterday".User_Struct_4.start_time:</span>
+            <span>:="HMI_Yesterday".User_Struct_4.end_time:</span>
+        </div>
+        <div class="yesterday-element" data-value="5">
+            <span>:="HMI_Yesterday".User_Struct_5.login:</span>
+            <span>:="HMI_Yesterday".User_Struct_5.password:</span>
+            <span>:="HMI_Yesterday".User_Struct_5.fuel_amount:</span>
+            <span>:="HMI_Yesterday".User_Struct_5.start_time:</span>
+            <span>:="HMI_Yesterday".User_Struct_5.end_time:</span>
+        </div>
+        <div class="yesterday-element" data-value="6">
+            <span>:="HMI_Yesterday".User_Struct_6.login:</span>
+            <span>:="HMI_Yesterday".User_Struct_6.password:</span>
+            <span>:="HMI_Yesterday".User_Struct_6.fuel_amount:</span>
+            <span>:="HMI_Yesterday".User_Struct_6.start_time:</span>
+            <span>:="HMI_Yesterday".User_Struct_6.end_time:</span>
+        </div>
+        <div class="yesterday-element" data-value="7">
+            <span>:="HMI_Yesterday".User_Struct_7.login:</span>
+            <span>:="HMI_Yesterday".User_Struct_7.password:</span>
+            <span>:="HMI_Yesterday".User_Struct_7.fuel_amount:</span>
+            <span>:="HMI_Yesterday".User_Struct_7.start_time:</span>
+            <span>:="HMI_Yesterday".User_Struct_7.end_time:</span>
+        </div>
+        <div class="yesterday-element" data-value="8">
+            <span>:="HMI_Yesterday".User_Struct_8.login:</span>
+            <span>:="HMI_Yesterday".User_Struct_8.password:</span>
+            <span>:="HMI_Yesterday".User_Struct_8.fuel_amount:</span>
+            <span>:="HMI_Yesterday".User_Struct_8.start_time:</span>
+            <span>:="HMI_Yesterday".User_Struct_8.end_time:</span>
+        </div>
+        <div class="yesterday-element" data-value="9">
+            <span>:="HMI_Yesterday".User_Struct_9.login:</span>
+            <span>:="HMI_Yesterday".User_Struct_9.password:</span>
+            <span>:="HMI_Yesterday".User_Struct_9.fuel_amount:</span>
+            <span>:="HMI_Yesterday".User_Struct_9.start_time:</span>
+            <span>:="HMI_Yesterday".User_Struct_9.end_time:</span>
+        </div>
+        <div class="yesterday-element" data-value="10">
+            <span>:="HMI_Yesterday".User_Struct_10.login:</span>
+            <span>:="HMI_Yesterday".User_Struct_10.password:</span>
+            <span>:="HMI_Yesterday".User_Struct_10.fuel_amount:</span>
+            <span>:="HMI_Yesterday".User_Struct_10.start_time:</span>
+            <span>:="HMI_Yesterday".User_Struct_10.end_time:</span>
+        </div>
+    </div>
+</div>
+
+      </div>
+      <script src="script.js"></script>
+      </body>
+</html>
